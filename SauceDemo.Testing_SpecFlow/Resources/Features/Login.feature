@@ -20,4 +20,5 @@ Scenario: Login Unsuccessful
 Examples: 
 | username | password |
 | murillo  | senha    |
+| laryssa  | alves    |
 
