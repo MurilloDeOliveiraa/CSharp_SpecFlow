@@ -38,9 +38,33 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
             Thread.Sleep(4000);
             HomePage homePage = new HomePage(getDriver());
             homePage.CheckTitle();
+            
             getDriver().Close();
             getDriver().Quit();
         }
+
+        [Given(@"I add (.*) products from the products page")]
+        public void GivenIAddProductsFromTheProductsPage(int productsToAdd)
+        {
+            HomePage homePage = new HomePage(getDriver());
+            homePage.SortProductsByPrice();
+            Thread.Sleep(3000);
+            homePage.AddProductToCart(productsToAdd);
+            Thread.Sleep(2000);
+        }
+
+        [When(@"I click on the cart button")]
+        public void WhenIClickOnTheCartButton()
+        {
+            
+        }
+
+        [Then(@"I should see the (.*) products added to the cart")]
+        public void ThenIShouldSeeTheProductsAddedToTheCart(int p0)
+        {
+            
+        }
+
 
     }
 }
