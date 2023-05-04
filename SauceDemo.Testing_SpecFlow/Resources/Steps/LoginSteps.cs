@@ -37,10 +37,7 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
         {
             Thread.Sleep(4000);
             HomePage homePage = new HomePage(getDriver());
-            homePage.CheckTitle();
-            
-            getDriver().Close();
-            getDriver().Quit();
+            homePage.CheckTitle();                       
         }
 
         [Given(@"I add (.*) products from the products page")]
@@ -62,7 +59,8 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
         [Then(@"I should see the (.*) products added to the cart")]
         public void ThenIShouldSeeTheProductsAddedToTheCart(int p0)
         {
-            
+            getDriver().Close();
+            getDriver().Quit();
         }
 
 
