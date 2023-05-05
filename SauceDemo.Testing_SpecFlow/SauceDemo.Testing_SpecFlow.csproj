@@ -203,6 +203,7 @@
     <Compile Include="Resources\Common\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Common\Base.cs" />
+    <Compile Include="Resources\Steps\TestSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

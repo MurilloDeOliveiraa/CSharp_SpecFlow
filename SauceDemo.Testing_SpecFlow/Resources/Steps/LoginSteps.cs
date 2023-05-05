@@ -1,4 +1,5 @@
-﻿using SauceDemo.Testing_SpecFlow.Resources.Common;
+﻿using NUnit.Framework;
+using SauceDemo.Testing_SpecFlow.Resources.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ using TechTalk.SpecFlow;
 
 namespace SauceDemo.Testing_SpecFlow.Pages_POM
 {
+    [Parallelizable(ParallelScope.All)]
     [Binding]
     public class LoginSteps : LoginPage
     {
