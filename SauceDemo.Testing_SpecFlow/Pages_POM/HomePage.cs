@@ -31,8 +31,11 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
         [FindsBy(How = How.CssSelector, Using = ".product_sort_container")]
         private IWebElement dropDown;
 
+        [FindsBy(How = How.CssSelector, Using = ".shopping_cart_link")]
+        private IWebElement cartButton;
 
 
+        #region Methods
         public void CheckTitle()
         {
             string expectedValue = "Products";
@@ -67,15 +70,26 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
 
         public void AddProductToCart(int quant)
         {
-            if (quant <= 1)
+            if (quant == 1)
             {
                FirstItem.Click();
             }
-            else
+            else if (quant == 2)
             {
                 FirstItem.Click();
                 SecondItem.Click();                
-            }            
+            } 
+            else if (quant == null)
+            {
+                Console.WriteLine("Quantidade igual a ZERO !");
+            }
         }
+
+        public void clickOnCartButton()
+        {
+            cartButton.Click();
+        }
+
+        #endregion
     }
 }

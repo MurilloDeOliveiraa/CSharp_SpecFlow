@@ -12,6 +12,7 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
     [Binding]
     public class LoginSteps : LoginPage
     {
+
         [Given(@"I navigate to the Login page")]
         public void GivenINavigateToTheLoginPage()
         {
@@ -53,16 +54,17 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
         [When(@"I click on the cart button")]
         public void WhenIClickOnTheCartButton()
         {
-            
+            HomePage homePage = new HomePage(getDriver());
+            homePage.clickOnCartButton();
         }
 
         [Then(@"I should see the (.*) products added to the cart")]
-        public void ThenIShouldSeeTheProductsAddedToTheCart(int p0)
+        public void ThenIShouldSeeTheProductsAddedToTheCart(int productsAdded)
         {
+            CheckoutPage checkoutPage = new CheckoutPage(getDriver());
+            checkoutPage.CheckNumberOfProductsOnCart(productsAdded);
             getDriver().Close();
             getDriver().Quit();
         }
-
-
     }
 }
