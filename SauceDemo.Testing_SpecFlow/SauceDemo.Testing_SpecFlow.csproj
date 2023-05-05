@@ -196,6 +196,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages_POM\CheckoutPage.cs" />
     <Compile Include="Pages_POM\HomePage.cs" />
     <Compile Include="Pages_POM\LoginPage.cs" />
     <Compile Include="Resources\Steps\LoginSteps.cs" />
