@@ -22,6 +22,7 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
             PageFactory.InitElements(this.Driver, this);
         }
 
+        #region Elements
         [FindsBy(How = How.XPath, Using = "//div[@class='inventory_item'][1]/div/div/button")]
         private IWebElement FirstItem;
 
@@ -33,7 +34,7 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
 
         [FindsBy(How = How.CssSelector, Using = ".shopping_cart_link")]
         private IWebElement cartButton;
-
+        #endregion
 
         #region Methods
         public void CheckTitle()
