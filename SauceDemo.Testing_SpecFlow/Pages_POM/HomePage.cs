@@ -89,6 +89,7 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
         public void clickOnCartButton()
         {
             cartButton.Click();
+            cartButton.Clear(); //Adding this new function after clicking on the button
         }
 
         #endregion
