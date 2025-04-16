@@ -2,14 +2,9 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
-using SauceDemo.Testing_SpecFlow.Resources.Common;
 using SeleniumExtras.PageObjects;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace SauceDemo.Testing_SpecFlow.Pages_POM
 {

@@ -1,14 +1,7 @@
 ﻿using OpenQA.Selenium;
 using SauceDemo.Testing_SpecFlow.Resources.Common;
-using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using TechTalk.SpecFlow;
-using TechTalk.SpecFlow.Assist;
 
 namespace SauceDemo.Testing_SpecFlow.Pages_POM
 {
