@@ -206,6 +206,7 @@
     <Compile Include="Resources\Steps\TestSteps.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".github\pull_request_template.md" />
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Resources\Features\Login.feature" />
