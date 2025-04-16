@@ -1,3 +1,65 @@
+# Ignore file for Visual Studio
+
+# use glob syntax
+syntax: glob
+
+# Ignore Visual Studio files
+.vsidx
 .vs
-obj/Debug
-bin/Debug
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.scc
+*.dbmdl
+*.DotSettings
+*.jfm
+[Bb]in
+[Dd]ebug*/
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+
+
+# QA specific ignores
+[Rr]eports
+*.rxlog
+*.rxuser
+EnCompass\EnCompassRepository.cs
+EnCompass\EnCompassRepository.rximg
+*.rej
+
+*.orig
+*.zip
+*.pref
+
+[Pp]ackages
+
+[Rr]esults*
+
+*.feature.cs
+
+# Exceptions
+!chromedriver.exe
+!IEDriverServer.exe
+!msedgedriver.exe
+!MicrosoftWebDriver.exe
+
