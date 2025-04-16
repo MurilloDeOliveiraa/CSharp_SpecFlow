@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
+using System.Configuration;
 using WebDriverManager.DriverConfigs.Impl;
-using OpenQA.Selenium;
 
 namespace SauceDemo.Testing_SpecFlow.Resources.Common
 {
