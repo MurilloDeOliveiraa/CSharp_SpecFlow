@@ -88,7 +88,5 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
         }
 
         #endregion
-
-        // Basic Comment
     }
 }
