@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using SauceDemo.Testing_SpecFlow.Resources.Common;
 using System;
 using System.Collections.Generic;
@@ -38,7 +39,6 @@ namespace SauceDemo.Testing_SpecFlow.Pages_POM
         [Then(@"I should navigate to the Home page")]
         public void ThenIShouldNavigateToTheHomePage()
         {
-            Thread.Sleep(4000);
             HomePage homePage = new HomePage(getDriver());
             homePage.CheckTitle();                       
         }

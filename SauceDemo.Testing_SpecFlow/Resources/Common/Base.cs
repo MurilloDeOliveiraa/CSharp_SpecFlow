@@ -23,11 +23,13 @@ namespace SauceDemo.Testing_SpecFlow.Resources.Common
             switch (selectedBrowser)
             {
                case "CHROME":
-                    new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
-                    Driver = new ChromeDriver();
+                    //new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
+                    ChromeOptions options = new ChromeOptions();                    
+                    options.AddArgument("--incognito");
+                    Driver = new ChromeDriver(options);
                     break;
                 case "EDGE":
-                    new WebDriverManager.DriverManager().SetUpDriver(new EdgeConfig());
+                    //new WebDriverManager.DriverManager().SetUpDriver(new EdgeConfig());
                     Driver = new EdgeDriver();
                     break;
             }
